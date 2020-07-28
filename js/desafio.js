@@ -25,6 +25,7 @@ function calcular() {
 
 // remover o que não for número e substituir por vazio
 function apenasNumeros(event) {
-  var valor = event.currentTarget.value;
-  event.currentTarget.value = valor.replace(/[^0-9]/g, "");
+    var valor = event.currentTarget.value;
+    if(parseInt(valor) == NaN)
+        event.currentTarget.value = valor.replace(/[^0-9,]/gm, "");
 }
