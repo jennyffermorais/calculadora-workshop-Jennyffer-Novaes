@@ -15,6 +15,8 @@ function calcular() {
 
   // calcular valor total do projeto
   var valorTotal = valorHora * horasProjeto;
+
+  // deixar apenas duas casas e, substituir ponto por vírgula
   var valorDuasCasas = valorTotal.toFixed(2).replace(".", ",");
   // console.log(valorDuasCasas)
 
